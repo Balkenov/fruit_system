@@ -19,7 +19,7 @@ class BoxController extends Controller
      */
     public function index()
     {
-        $boxes = Box::all();
+        $boxes = Box::whereNull('deleted_at')->get();
 
         return view('boxes.index', ['boxes' => $boxes]);
     }

@@ -4,7 +4,7 @@
 @section('Content')
     <header class="major">
         <h2>Ящики</h2>
-        <span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
+        <span class="byline">Статистика по ящикам</span>
     </header>
 
 

@@ -3,8 +3,7 @@
 
 @section('Content')
     <header class="major">
-        <h2>No Sidebar</h2>
-        <span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
+        <h2>Добавить новый ящик</h2>
     </header>
 
 

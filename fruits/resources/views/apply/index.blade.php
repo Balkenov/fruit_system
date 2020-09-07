@@ -3,7 +3,7 @@
 @section('Content')
     <header class="major">
         <h2>Заявка на хранение фруктов</h2>
-        <span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
+
     </header>
 
 

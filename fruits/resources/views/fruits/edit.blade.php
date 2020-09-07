@@ -2,15 +2,14 @@
 
 @section('Content')
     <header class="major">
-        <h2>No Sidebar</h2>
-        <span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
+        <h2>Изменить фрукт "{{$fruit->name}}"</h2>
     </header>
 
     <form method="POST" action="{{route('fruits.update', $fruit)}}">
         @csrf
         @method('PUT')
 
-        <p><div class="form-group">
+        <div class="form-group">
             <label class="font-weight-normal">Название</label>
             <input name="name" type="text" class="form-control form-control-lg border {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{$fruit->name}}">
             @error('name')

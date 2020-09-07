@@ -7,8 +7,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Fruit extends Model
 {
-    use SoftDeletes;
-
     protected $fillable = ['name', 'quantity'];
 
     public function boxes(){

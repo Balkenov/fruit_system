@@ -3,8 +3,7 @@
 
 @section('Content')
     <header class="major">
-        <h2>No Sidebar</h2>
-        <span class="byline">Статистика по ящикам</span>
+        <h2>Редактирование ящика "{{$box->name}}"</h2>
     </header>
 
 

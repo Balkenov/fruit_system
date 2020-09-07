@@ -28,8 +28,6 @@ class CreateFruitsTable extends Migration
      */
     public function down()
     {
-        Schema::table('fruits', function (Blueprint $table) {
-            $table->dropSoftDeletes();
-        });
+        Schema::dropIfExists('fruits');
     }
 }

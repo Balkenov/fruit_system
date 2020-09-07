@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/style-wide.css" />
 
-    <title>No Sidebar - Phase Shift by TEMPLATED</title>
+    <title>Fruit Storage</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -64,11 +64,11 @@
                 @endauth
                 @guest
                     <li class="nav-item">
-                        <a style="{{(Request::path() === "") ? 'font-weight: bold' : ''}}" class="nav-link {{(Request::path() === 'login') ? 'active bg-dark font-weight-bold' : ''}}" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        <a style="{{(Request::path() === "") ? 'font-weight: bold' : ''}}" class="nav-link {{(Request::path() === 'login') ? 'active bg-dark font-weight-bold' : ''}}" href="{{ route('login') }}">{{ __('Войти') }}</a>
                     </li>
                     @if (Route::has('register'))
                         <li class="nav-item">
-                            <a class="nav-link {{(Request::path() === 'register') ? 'active bg-dark font-weight-bold' : ''}}"" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            <a class="nav-link {{(Request::path() === 'register') ? 'active bg-dark font-weight-bold' : ''}}"" href="{{ route('register') }}">{{ __('Регистрация') }}</a>
                         </li>
                     @endif
                 @else
@@ -78,10 +78,10 @@
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{ route('logout') }}"
+                            <a class="dropdown-item bg-dark" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                {{ __('Logout') }}
+                                {{ __('Выйти') }}
                             </a>
 
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
@@ -106,89 +106,15 @@
     </div>
     <!-- /Page -->
 
-    <!-- Main -->
-{{--    <div id="main">--}}
-{{--        <div class="container">--}}
-{{--            <div class="row">--}}
-
-{{--                <!-- Content -->--}}
-{{--                <div class="6u">--}}
-{{--                    <section>--}}
-{{--                        <ul class="style">--}}
-{{--                            <li class="fa fa-wrench">--}}
-{{--                                <h3>Integer ultrices</h3>--}}
-{{--                                <span>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Maecenas condimentum enim tincidunt risus accumsan.</span> </li>--}}
-{{--                            <li class="fa fa-leaf">--}}
-{{--                                <h3>Aliquam luctus</h3>--}}
-{{--                                <span>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Maecenas condimentum enim tincidunt risus accumsan.</span> </li>--}}
-{{--                        </ul>--}}
-{{--                    </section>--}}
-{{--                </div>--}}
-{{--                <div class="6u">--}}
-{{--                    <section>--}}
-{{--                        <ul class="style">--}}
-{{--                            <li class="fa fa-cogs">--}}
-{{--                                <h3>Integer ultrices</h3>--}}
-{{--                                <span>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Maecenas condimentum enim tincidunt risus accumsan.</span> </li>--}}
-{{--                            <li class="fa fa-road">--}}
-{{--                                <h3>Aliquam luctus</h3>--}}
-{{--                                <span>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Maecenas condimentum enim tincidunt risus accumsan.</span> </li>--}}
-{{--                        </ul>--}}
-{{--                    </section>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-    <!-- /Main -->
-
 </div>
-
-<!-- Footer -->
-{{--<div id="footer" class="wrapper style2">--}}
-{{--    <div class="container">--}}
-{{--        <section>--}}
-{{--            <header class="major">--}}
-{{--                <h2>Mauris vulputate dolor</h2>--}}
-{{--                <span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>--}}
-{{--            </header>--}}
-{{--            <form method="post" action="#">--}}
-{{--                <div class="row half">--}}
-{{--                    <div class="12u">--}}
-{{--                        <input class="text" type="text" name="name" id="name" placeholder="Name" />--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="row half">--}}
-{{--                    <div class="12u">--}}
-{{--                        <input class="text" type="text" name="email" id="email" placeholder="Email" />--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="row half">--}}
-{{--                    <div class="12u">--}}
-{{--                        <textarea name="message" id="message" placeholder="Message"></textarea>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="row half">--}}
-{{--                    <div class="12u">--}}
-{{--                        <ul class="actions">--}}
-{{--                            <li>--}}
-{{--                                <input type="submit" value="Send Message" class="button alt" />--}}
-{{--                            </li>--}}
-{{--                        </ul>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </form>--}}
-{{--        </section>--}}
-{{--    </div>--}}
-{{--</div>--}}
-<!-- /Footer -->
 
 <!-- Copyright -->
 <div id="copyright">
     <div class="container"> <span class="copyright">Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)</span>
         <ul class="icons">
-            <li><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
-            <li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
-            <li><a href="#" class="fa fa-google-plus"><span>Google+</span></a></li>
+            <li><a href="http://facebook.com" class="fa fa-facebook"><span>Facebook</span></a></li>
+            <li><a href="http://twitter.com" class="fa fa-twitter"><span>Twitter</span></a></li>
+            <li><a href="http://instagram.com" class="fa fa-instagram"><span>Instagram</span></a></li>
         </ul>
     </div>
 </div>
